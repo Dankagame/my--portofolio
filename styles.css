@@ -1,0 +1,112 @@
+/* Root Colors and Global Styles */
+:root {
+    --primary-color: #1E3A8A;
+    --secondary-color: #3B82F6;
+    --background-color: #0F172A;
+    --text-color: #E2E8F0;
+    --accent-color: #FACC15;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 15px 30px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    background: var(--secondary-color);
+    color: white;
+}
+.hero .btn {
+    background: var(--accent-color);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.hero .btn:hover {
+    background: #D97706;
+}
+
+/* Sections */
+.content {
+    padding: 40px;
+    text-align: center;
+}
+
+.skills-grid, .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.skill-card, .project-card {
+    background: var(--primary-color);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+/* Contact Form */
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    background: var(--accent-color);
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover {
+    background: #D97706;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary-color);
+}
